@@ -14,9 +14,9 @@ echo "Converting to odt"
 pandoc -o $OUTPUTFILE.odt $INPUTFILE
 # Convert markdown to PDF
 echo "Converting to pdf"
-pandoc --latex-engine-pdflatex -o $OUTPUTFILE.pdf $INPUTFILE
+pandoc --latex-engine=pdflatex -o $OUTPUTFILE.pdf $INPUTFILE                   
 # Convert markdown to RTF
 echo "Converting to rtf"
 pandoc -o $OUTPUTFILE.rtf $INPUTFILE 
 # Make the command line read "Converted INPUT-FILENAME to HTML, DOCX, ODT, PDF
-echo "Converted $INPUTFILE to HTML, DOCX, ODT, PDF"
+echo "Converted $INPUTFILE to HTML, DOCX, ODT, PDF, and RTF"
